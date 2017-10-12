@@ -28,7 +28,9 @@ bower_components
 
 # node-waf configuration
 .lock-wscript
-
+/primerProyecto/.idea
+/primerProyecto/out
+/primerProyecto/primerProyecto.iml
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
