@@ -29,8 +29,10 @@ public class main {
        // Necesito ayuda con esto
 
        System.out.print("Ingrese Edad: ");
-       String edad = RC.readline();
-        int edadNumero = integer.parseInt(edad);
+       //Aca era br no RC me equivoque yo cuando te lo pase
+       String edad = br.readLine();
+       //Aca es Integer no integer
+       int edadNumero = Integer.parseInt(edad);
 
        System.out.print("Ingrese Nacionalidad: ");
        String nacionalidad = br.readLine();
@@ -38,7 +40,8 @@ public class main {
        //Necesito ayuda con esto
 
        System.out.print("Ingrese DNI: ");
-        Integer documento = br.read();
+       String documento = br.readLine();
+       int docNumero = Integer.parseInt(documento);
 
        //Condicional
 
@@ -49,12 +52,16 @@ public class main {
        }
 
        // Set
-
+        //Ojo con esto, fijate que le estas seteando el nombre directamente, acordate que ya habiamos agregado
+        // un condicional arriba que controlaba que el nombre sea mayor o igual a 3 letras sino lo deja vacio.
+        //Esta linea lo setea si o si. Deberias sacarla.
        persona.setNombre(nombre);
        persona.setApellido(apellido);
-       persona.setEdad(edad);
+       //aca seteas la variable que ya tiene el valor int y no el String
+       persona.setEdad(edadNumero);
        persona.setNacionalidad(nacionalidad);
-       persona.setDocumento(documento);
+       // Igual aca
+       persona.setDocumento(docNumero);
 
        // Los resultados no me los trae como los puse (INT)
 
