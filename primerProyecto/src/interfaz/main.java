@@ -23,6 +23,8 @@ public class main {
        System.out.print("Ingrese Apellido: ");
        String apellido = br.readLine();
 
+       //Cambio
+
        if (nombre.length() >= 3) {
            persona.setNombre(nombre);
        } else {
