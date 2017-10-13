@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Main {
 
     public static void main(String args[]) throws Exception{
         //Variables auxiliares y declaraciones de objetos
@@ -26,7 +26,6 @@ public class main {
                     limpiarPantalla();
                 }
                 noEsPrimerCiclo = true;
-
                 //Menu Principal
                 System.out.println("-------- Menu Principal ------");
                 System.out.println("1- Agregar Usuario");
