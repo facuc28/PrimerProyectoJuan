@@ -16,6 +16,8 @@ public class main {
        Persona persona2 = new Persona("Efrain", "Kain");
 
 
+
+       //Esto se muestra por pantalla
        System.out.print("Ingrese Nombre: ");
        String nombre = br.readLine();
        System.out.print("Ingrese Apellido: ");
