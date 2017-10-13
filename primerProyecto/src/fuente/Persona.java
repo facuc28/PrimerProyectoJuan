@@ -6,14 +6,16 @@ public class Persona {
     private String apellido;
     private int edad;
     private String nacionalidad;
+    private int documento;
 
     public Persona(){}
 
-    public Persona(String nombreParametro, String apellidoParametro, int edadParametro, String nacionalidadParametro) {
+    public Persona(String nombreParametro, String apellidoParametro, int edadParametro, String nacionalidadParametro, int documentoParametro) {
         nombre = nombreParametro;
         apellido = apellidoParametro;
         edad = edadParametro;
         nacionalidad = nacionalidadParametro;
+        documento = documentoParametro;
     }
 
     public Persona (String nombreParametro, String apellidoParametro){
@@ -51,5 +53,10 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public int getDocumento() { return documento; }
+
+    public void setDocumento(int documento){this.documento = documento;
     }
 }
